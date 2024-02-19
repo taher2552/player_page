@@ -378,7 +378,9 @@ a {
   align-items:start;
   flex-direction: row-reverse;
   gap:2rem;
-  margin: 6rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-bottom: 3rem;
   margin-top: 2rem;
 }
 
