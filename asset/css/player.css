@@ -21,7 +21,7 @@ a {
 }
 
 #formError {
-  color: red;
+  color: #fe5c4d;
 }
 
 .fb_font {
@@ -39,7 +39,6 @@ a {
 
 /* player top section  */
 .player_container {
-  max-width: 550px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -48,6 +47,7 @@ a {
   background-color: #fff1f1;
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
+  min-width: 20rem;
 }
 
 .player_img {
@@ -112,6 +112,36 @@ a {
   font-size: 1rem;
 }
 
+.reserve_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first_free{
+  color: #fe5c4d;
+  margin-top: 1rem;
+}
+
+.reserve_btn button{
+  background-color: #fe5c4d;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  width: 245.406px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.reserve_btn button:hover{
+  border: 1px solid #fe5c4d;
+  background-color: #fff;
+  color: #fe5c4d;
+  transition: all 0.5s ease-in-out;
+}
+
 /* player top section ends */
 
 /* player middle section  */
@@ -128,7 +158,7 @@ a {
 }
 
 .player_sports p {
-  color: red;
+  color:#fe5c4d;
 }
 
 .player_about h1 {
@@ -300,6 +330,7 @@ a {
 
 /* For WebKit browsers */
 ::-webkit-scrollbar {
+  width: 5px;
   height: 5px; /* Height of the horizontal scrollbar */
 }
 
@@ -328,8 +359,34 @@ a {
 }
 
 .red_box p{
-  color: red;
+  color:#fe5c4d;
 }
 
 /* similar section ends */
 /* player middle section ends */
+
+/* media query section  */
+@media only screen and (min-width: 850px){
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  flex-direction: row-reverse;
+  gap:2rem;
+  margin: 6rem;
+  margin-top: 2rem;
+}
+
+.player_top{
+  width: 30%;
+  border-radius: 1.5rem;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 2rem;
+}
+
+.player_main{
+  width: 70%;
+}
+}
+/* media query section ends */
