@@ -263,6 +263,11 @@ a {
 }
 
 /* similar section  */
+.blog_player{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .fb_blog_flex {
   display: flex;
   justify-content: space-between;
@@ -366,7 +371,7 @@ a {
 /* player middle section ends */
 
 /* media query section  */
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 950px){
 .main_container{
   display: flex;
   justify-content: center;
@@ -387,6 +392,11 @@ a {
 
 .player_main{
   width: 70%;
+}
+
+.blog_player{
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 }
 /* media query section ends */
